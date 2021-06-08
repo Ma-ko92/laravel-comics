@@ -9,7 +9,18 @@
 
 {{-- BODY --}}
 <body>
+
+    {{-- Header --}}
     @include('partials.header')
+
+    {{-- Segnaposto per il contenuto del main --}}
+    <main>
+        @yield('main_content')
+    </main>
+
+    {{-- Footer --}}
+    @include('partials.footer')
+
 </body>
 {{-- BODY END --}}
 </html>
