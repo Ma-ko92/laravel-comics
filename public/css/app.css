@@ -23,22 +23,19 @@ img {
   text-align: right;
   text-transform: uppercase;
 }
-
 .top_header .container a {
   color: #ffffff;
   text-decoration: none;
   font-size: 9px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 22px;
   margin-left: 40px;
 }
-
 .top_header .container a span {
   vertical-align: top;
   font-size: 6px;
   padding-top: 2px;
 }
-
 .top_header .container a i {
   font-size: 12px;
   position: relative;
@@ -51,31 +48,25 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-
 .flex_container .logo {
   width: 65px;
 }
-
 .flex_container .logo img {
   width: 65px;
   padding: 15px 0px;
 }
-
 .flex_container .menu {
   display: flex;
   flex-direction: row;
 }
-
 .flex_container .menu li {
   list-style-type: none;
   margin: 0px 15px;
 }
-
 .flex_container .menu li.active a {
   color: #0282f9;
   border-bottom: 5px solid #0282f9;
 }
-
 .flex_container .menu li a {
   text-decoration: none;
   color: #222222;
@@ -84,13 +75,11 @@ img {
   font-weight: 800;
   padding-bottom: 34px;
 }
-
 .flex_container .menu li a:hover {
   color: #0282f9;
   border-bottom: 5px solid #0282f9;
   transition: 0.2s;
 }
-
 .flex_container .menu li a i {
   font-size: 12px;
   position: relative;
@@ -98,37 +87,31 @@ img {
   margin-left: 3px;
   color: #0282f9;
 }
-
 .flex_container .search {
   width: 100px;
   border-bottom: 2px solid #0282f9;
 }
-
 .flex_container .search input {
   width: 80%;
   outline: none;
   border: none;
   padding: 2px 0px;
 }
-
 .flex_container .search input::-moz-placeholder {
   text-align: right;
   color: #222222;
   font-weight: 700;
 }
-
 .flex_container .search input:-ms-input-placeholder {
   text-align: right;
   color: #222222;
   font-weight: 700;
 }
-
 .flex_container .search input::placeholder {
   text-align: right;
   color: #222222;
   font-weight: 700;
 }
-
 .flex_container .search i {
   margin-left: 4px;
   vertical-align: middle;
@@ -136,3 +119,9 @@ img {
   color: #222222;
 }
 
+.jumbotron {
+  height: 320px;
+  background-image: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
