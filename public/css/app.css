@@ -125,3 +125,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.comics_container {
+  background-color: #222222;
+}
