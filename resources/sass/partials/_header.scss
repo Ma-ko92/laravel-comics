@@ -1,0 +1,124 @@
+// Top Header
+.top_header {
+    background-color: $brand_main;
+    text-align: right;
+    text-transform: uppercase;
+
+    .container{
+
+        a{
+            color: $brand_tertiary;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-left: 40px;
+
+            span{
+                vertical-align: top;
+                font-size: 6px;
+                padding-top: 2px;
+            }
+
+            i{
+                font-size: 12px;
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+}
+
+// Flex Container
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    // Logo
+    .logo{
+
+        width: 65px;
+
+        img{
+            width: 65px;
+            padding: 15px 0px;
+        }
+    }
+
+    // Menu
+    .menu{
+
+        display: flex;
+        flex-direction: row;
+
+        li{
+            list-style-type: none;
+            margin: 0px 15px;
+
+            &.active{
+
+                a{
+                    color: $brand_main;
+                    border-bottom: 5px solid $brand_main;
+                }
+                    
+            }
+
+            a{
+                text-decoration: none;
+                color: $brand_secondary;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 800;
+                padding-bottom: 34px;
+
+                &:hover {
+                    color: $brand_main;
+                    border-bottom: 5px solid $brand_main;
+                    transition: 0.2s;
+                }
+
+                i{
+                    font-size: 12px;
+                    position: relative;
+                    top: -2px;
+                    margin-left: 3px;
+                    color: $brand_main;
+                }
+            }
+        }
+    }
+
+    // Search
+    .search{
+        
+        width: 100px;
+        border-bottom: 2px solid $brand_main;
+
+        input{
+
+            width: 80%;
+            outline: none;
+            border: none;
+            
+
+            &::placeholder{
+                text-align: right;
+                color: $brand_secondary;
+                font-weight: 700;
+            }
+
+        }
+
+        i{
+            margin-left: 4px;
+            vertical-align: middle;
+            cursor: pointer;
+            color: $brand_secondary;
+        }
+    }
+}
+
+
