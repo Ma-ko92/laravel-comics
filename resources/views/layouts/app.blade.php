@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- Title --}}
-    <title>DC | Welcome to DC</title>
+    <title>@yield('tag_title')</title>
     {{-- Icon --}}
     <link rel="icon" href=" {{ asset('img/favicon.ico') }} ">
 

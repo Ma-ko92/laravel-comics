@@ -1,6 +1,11 @@
 {{-- Estensione per il layout --}}
 @extends('layouts.app')
 
+{{-- Titolo della Pagina --}}
+@section('tag_title')
+    DC | Welcome to DC
+@endsection
+
 {{-- Main --}}
 @section('main_content')
     {{-- Jumbotron --}}
@@ -15,6 +20,10 @@
 
                 {{-- Comics --}}
                 <div class="comics">
+
+                    <div class="tag">
+                        Current Series
+                    </div>
 
                     {{-- Star foreach --}}
                     @foreach ($comics as $comic)
