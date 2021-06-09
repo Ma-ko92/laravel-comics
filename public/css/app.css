@@ -210,3 +210,61 @@ img {
 .shop_bg .shop_links a span {
   margin-left: 15px;
 }
+
+.top_main {
+  background-color: #0282f9;
+  height: 70px;
+}
+
+.details_container {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+.details_container .comic_cover {
+  position: absolute;
+  top: -175px;
+}
+.details_container .comic_cover img {
+  width: 150px;
+}
+.details_container .comic_cover .cover_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00a9d9;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size: 9px;
+  font-weight: 700;
+}
+.details_container .comic_cover .cover_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00a9d9;
+  text-align: center;
+  line-height: 10px;
+  padding: 3px;
+}
+.details_container .comic_cover .cover_bottom a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 700;
+}
+.details_container .details_flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+}
+.details_container .details_flex .main_info {
+  width: 80%;
+}
+.details_container .details_flex .advertisement {
+  margin-left: 20px;
+  text-align: right;
+}

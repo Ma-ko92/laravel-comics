@@ -100,4 +100,75 @@
     }
 }
 
+// Comic details main
+.top_main{
+    background-color: $brand_main;
+    height: 70px;
+}
+
+.details_container{
+    width: 800px;
+    margin: auto;
+    position: relative;
+
+    .comic_cover{
+        position: absolute;
+        top: -175px;
+
+        img{
+            width: 150px;
+        }
+
+        .cover_top{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $brand_quaternary;
+            color: $brand_tertiary;
+            text-transform: uppercase;
+            padding: 4px;
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        .cover_bottom{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $brand_quaternary;
+            text-align: center;
+            line-height: 10px;
+            padding: 3px;
+
+            a{
+                text-decoration: none;
+                color: $brand_tertiary;
+                text-transform: uppercase;
+                font-size: 9px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    // Middle section
+    .details_flex{
+        display: flex;
+        flex-direction: row;
+        padding-top: 60px;
+
+        .main_info{
+            width: 80%;
+        }
+
+        .advertisement{
+            margin-left: 20px;
+            text-align: right;
+        }
+    }
+
+    
+
+}
+
 
