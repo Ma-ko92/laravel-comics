@@ -9,7 +9,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -128,4 +128,64 @@ img {
 
 .comics_container {
   background-color: #222222;
+  padding: 20px 0px;
+}
+.comics_container .comics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.comics_container .comic {
+  width: calc( 100% / 6 );
+  padding: 10px;
+}
+.comics_container .comic .cover {
+  height: 190px;
+  padding: 20px 0px;
+}
+.comics_container .comic .cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.comics_container .comic .cover_title {
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.comics_container .button {
+  margin: auto;
+  text-align: center;
+  line-height: 15px;
+  margin-top: 25px;
+}
+.comics_container .button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0282f9;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 8px 45px;
+}
+
+.shop_bg {
+  background-color: #0282f9;
+  padding: 20px 0px;
+}
+.shop_bg .shop_links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shop_bg .shop_links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.shop_bg .shop_links a img {
+  width: 30px;
 }

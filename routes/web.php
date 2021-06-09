@@ -15,5 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 // Route collegata alla homepage
 Route::get('/', function () {
-    return view('homepage');
+
+    // Richiamo l'array comics dal file php situato in config
+    $comics = config('comics');
+
+    // Creo un array associativo
+    $data = [
+        'comics' => $comics
+    ];
+
+    // dd($comics_array);
+    
+    return view('homepage', $data);
 })->name('home');
