@@ -45,19 +45,19 @@
             <div class="container">
                 <ul class="shop_links">
                     <li>
-                        <a href="#"><img src="../img/buy-comics-digital-comics.png" alt="buy-comics-digital-comics"> Digital comics</a>
+                        <a href="#"><img src="../img/buy-comics-digital-comics.png" alt="buy-comics-digital-comics"><span>Digital comics</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../img/buy-comics-merchandise.png" alt="buy-comics-merchandise"> DC merchandise</a>
+                        <a href="#"><img src="../img/buy-comics-merchandise.png" alt="buy-comics-merchandise"><span>DC merchandise</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../img/buy-comics-subscriptions.png" alt="buy-comics-subscriptions"> Subscription</a>
+                        <a href="#"><img src="../img/buy-comics-subscriptions.png" alt="buy-comics-subscriptions"><span>Subscription</span></a> 
                     </li>
                     <li>
-                        <a href="#"><img src="../img/buy-comics-shop-locator.png" alt="buy-comics-shop-locator"> Comic shop locator</a>
+                        <a href="#"><img src="../img/buy-comics-shop-locator.png" alt="buy-comics-shop-locator"><span>Comic shop locator</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../img/buy-dc-power-visa.svg" alt="buy-dc-power-visa"> DC power visa</a>
+                        <a href="#"><img class="ms_img" src="../img/buy-dc-power-visa.svg" alt="buy-dc-power-visa"><span>DC power visa</span></a>
                     </li>
                 </ul>
             </div>

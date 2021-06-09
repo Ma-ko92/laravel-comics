@@ -174,18 +174,27 @@ img {
 
 .shop_bg {
   background-color: #0282f9;
-  padding: 20px 0px;
+  padding: 40px 0px;
 }
 .shop_bg .shop_links {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 .shop_bg .shop_links a {
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 .shop_bg .shop_links a img {
-  width: 30px;
+  height: 45px;
+}
+.shop_bg .shop_links a img.ms_img {
+  height: 30px;
+}
+.shop_bg .shop_links a span {
+  margin-left: 15px;
 }

@@ -64,21 +64,32 @@
 // Shop section
 .shop_bg{
     background-color: $brand_main;
-    padding: 20px 0px;
+    padding: 40px 0px;
 
     .shop_links{
         list-style-type: none;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        
 
         a{
             text-decoration: none;
             color: $brand_tertiary;
-
+            display: flex;
+            align-items: center;
 
             img{
-                width: 30px;
+                height: 45px;
+
+                &.ms_img{
+                    height: 30px;
+                }
+            }
+
+            span{
+                margin-left: 15px;
             }
         }
     }
