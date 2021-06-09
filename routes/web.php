@@ -30,6 +30,24 @@ Route::get('/', function () {
 })->name('home');
 
 // Route collegata alla pagina dettaglio di ogni singolo fumetto
-Route::get('/comic_detail', function () {
-    return view('comic_detail');
-})->name('comic_detail');
+Route::get('/comic_details/{id}', function ($id) {
+
+    // Richiamo l'array comics dal file php situato in config
+    $comics = config('comics');
+
+    // Creo un array e lo popolo con un foreach per ottenere l'id di ogni singolo fumetto
+    $comic_details = [];
+    foreach($comics as $comic) {
+        // Verifico che l'id passato sia uguale e presente all' id di ogni singolo fumetto
+        if($comic['id'] === (int)$id) {
+            $comic_details = $comic;
+        }
+    }
+
+    // Condizione che visualizza errore 404 in caso di inserimento di un id non presente nell'array
+    if(empty($comic_details)) {
+        abort('404');
+    }
+
+    return view('comic_details');
+})->name('comic_details');
