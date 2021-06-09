@@ -8,10 +8,6 @@
 
 {{-- Main --}}
 @section('main_content')
-    {{-- Jumbotron --}}
-    <section>
-        <div class="jumbotron"></div>
-    </section>
 
     {{-- Main content --}}
     <section>

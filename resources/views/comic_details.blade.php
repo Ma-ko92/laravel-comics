@@ -1,1 +1,7 @@
-<h1>Funziona</h1>
+{{-- Estensione per il layout --}}
+@extends('layouts.app')
+
+{{-- Titolo della Pagina --}}
+@section('tag_title')
+    Comics | DC
+@endsection
