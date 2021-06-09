@@ -28,3 +28,8 @@ Route::get('/', function () {
     
     return view('homepage', $data);
 })->name('home');
+
+// Route collegata alla pagina dettaglio di ogni singolo fumetto
+Route::get('/comic_detail', function () {
+    return view('comic_detail');
+})->name('comic_detail');
