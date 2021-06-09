@@ -37,7 +37,9 @@
 
                 {{-- Left col --}}
                 <div class="main_info">
+                    {{-- Comic title --}}
                     <h1>{{ $comic_details['title'] }}</h1>
+
                     <div class="availability_info">
 
                         {{-- Price --}}
@@ -50,8 +52,9 @@
                         <div class="availability_check">
                             <a href="#">Check Availability <i class="fas fa-sort-down"></i></a>
                         </div>
-
                     </div>
+
+                    {{-- Description --}}
                     <p>{{ $comic_details['description'] }}</p>
                 </div>
 

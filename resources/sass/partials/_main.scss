@@ -114,6 +114,7 @@
     .comic_cover{
         position: absolute;
         top: -175px;
+        border: 1px solid $brand_tertiary;
 
         img{
             width: 150px;
@@ -157,14 +158,30 @@
         flex-direction: row;
         padding-top: 60px;
 
+        // Left col
         .main_info{
             width: 80%;
+
+            h1{
+                color: $brand_quintary;
+                text-transform: uppercase;
+                font-size: 22px;
+            }
+
+            p{
+                color: $brand_sextary;
+                font-size: 12px;
+                line-height: 20px;
+                
+            }
 
             .availability_info{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 padding: 20px 0px 10px 0px;
+                font-size: 12px;
+                font-weight: 700;
 
                 .price{
                     display: flex;
@@ -172,21 +189,56 @@
                     justify-content: space-between;
                     flex-grow: 1;
                     padding: 10px 20px;
-                    background-color: limegreen;
-                    border-right: 1px solid gray;
+                    color: $brand_octanary;
+                    background-color: $brand_septenary;
+                    border-right: 1px solid $brand_sextary;
+                    border-bottom: 1px solid $brand_sextary;
+
+                    div{
+                        &:last-child{
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    span{
+                        color: $brand_tertiary;
+                    }
                 }
 
                 .availability_check{
                     padding: 10px 20px;
-                    background-color: limegreen;
+                    background-color: $brand_septenary;
+                    border-bottom: 1px solid $brand_sextary;
+                    
+                    a{
+                        text-decoration: none;
+                        color: $brand_tertiary;
+
+                        i{
+                            vertical-align: text-top;
+                            margin-left: 2px;
+                        }
+                    }
                 }
 
             }
         }
 
+        // Right col
         .advertisement{
             margin-left: 20px;
             text-align: right;
+            position: relative;
+
+            span{
+                position: absolute;
+                top: -18px;
+                right: 0;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 800;
+                color: $brand_sextary;
+            }
         }
     }
 

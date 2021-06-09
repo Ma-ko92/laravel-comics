@@ -224,6 +224,7 @@ img {
 .details_container .comic_cover {
   position: absolute;
   top: -175px;
+  border: 1px solid #ffffff;
 }
 .details_container .comic_cover img {
   width: 150px;
@@ -264,11 +265,23 @@ img {
 .details_container .details_flex .main_info {
   width: 80%;
 }
+.details_container .details_flex .main_info h1 {
+  color: #003f5e;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.details_container .details_flex .main_info p {
+  color: #595959;
+  font-size: 12px;
+  line-height: 20px;
+}
 .details_container .details_flex .main_info .availability_info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0px 10px 0px;
+  font-size: 12px;
+  font-weight: 700;
 }
 .details_container .details_flex .main_info .availability_info .price {
   display: flex;
@@ -276,14 +289,41 @@ img {
   justify-content: space-between;
   flex-grow: 1;
   padding: 10px 20px;
-  background-color: limegreen;
-  border-right: 1px solid gray;
+  color: #a8f084;
+  background-color: #55ba59;
+  border-right: 1px solid #595959;
+  border-bottom: 1px solid #595959;
+}
+.details_container .details_flex .main_info .availability_info .price div:last-child {
+  text-transform: uppercase;
+}
+.details_container .details_flex .main_info .availability_info .price span {
+  color: #ffffff;
 }
 .details_container .details_flex .main_info .availability_info .availability_check {
   padding: 10px 20px;
-  background-color: limegreen;
+  background-color: #55ba59;
+  border-bottom: 1px solid #595959;
+}
+.details_container .details_flex .main_info .availability_info .availability_check a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.details_container .details_flex .main_info .availability_info .availability_check a i {
+  vertical-align: text-top;
+  margin-left: 2px;
 }
 .details_container .details_flex .advertisement {
   margin-left: 20px;
   text-align: right;
+  position: relative;
+}
+.details_container .details_flex .advertisement span {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: #595959;
 }
