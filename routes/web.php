@@ -49,5 +49,9 @@ Route::get('/comic_details/{id}', function ($id) {
         abort('404');
     }
 
-    return view('comic_details');
+    $data = [
+        'comic_details' => $comic_details
+    ];
+
+    return view('comic_details', $data);
 })->name('comic_details');

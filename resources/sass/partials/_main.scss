@@ -159,6 +159,29 @@
 
         .main_info{
             width: 80%;
+
+            .availability_info{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px 0px 10px 0px;
+
+                .price{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    padding: 10px 20px;
+                    background-color: limegreen;
+                    border-right: 1px solid gray;
+                }
+
+                .availability_check{
+                    padding: 10px 20px;
+                    background-color: limegreen;
+                }
+
+            }
         }
 
         .advertisement{

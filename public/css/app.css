@@ -264,6 +264,25 @@ img {
 .details_container .details_flex .main_info {
   width: 80%;
 }
+.details_container .details_flex .main_info .availability_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px 10px 0px;
+}
+.details_container .details_flex .main_info .availability_info .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 10px 20px;
+  background-color: limegreen;
+  border-right: 1px solid gray;
+}
+.details_container .details_flex .main_info .availability_info .availability_check {
+  padding: 10px 20px;
+  background-color: limegreen;
+}
 .details_container .details_flex .advertisement {
   margin-left: 20px;
   text-align: right;

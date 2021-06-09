@@ -16,7 +16,7 @@
                 {{-- Comic cover --}}
                 <div class="comic_cover">
         
-                    <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+                    <img src="{{ $comic_details['thumb'] }}" alt="{{ $comic_details['series'] }}">
                     <div class="cover_top">
                         Comic Book
                     </div>
@@ -34,19 +34,25 @@
         <div class="details_container">
             {{-- Flexbox --}}
             <div class="details_flex">
+
                 {{-- Left col --}}
                 <div class="main_info">
-                    <h1>Testo: extra</h1>
+                    <h1>{{ $comic_details['title'] }}</h1>
                     <div class="availability_info">
-                        <div class="price">
-                            <span>20.99</span>
-                            <span>availability</span>
-                        </div>
-                        <select name="availability" value="Check availability">
 
-                        </select>
+                        {{-- Price --}}
+                        <div class="price">
+                            <div>U.S. Price: <span>{{ $comic_details['price'] }}</span></div>
+                            <div>Available</div>
+                        </div>
+
+                        {{-- Availability check --}}
+                        <div class="availability_check">
+                            <a href="#">Check Availability <i class="fas fa-sort-down"></i></a>
+                        </div>
+
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore similique, fuga provident voluptates corrupti voluptate officia sequi? Beatae fugiat perferendis nemo, eum id voluptates, debitis, assumenda libero aspernatur repudiandae voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae doloribus ex culpa quo autem unde obcaecati, saepe exercitationem quas ut sint enim provident dolorum facilis nostrum ullam similique voluptas!</p>
+                    <p>{{ $comic_details['description'] }}</p>
                 </div>
 
                 {{-- Right col --}}
