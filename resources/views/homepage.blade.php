@@ -27,7 +27,11 @@
                     {{-- Comic --}}
                     <div class="comic">
                         <div class="cover">
-                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            <a href="{{ route('comic_details', [
+                                'id' => $comic['id']
+                                ]) }}">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            </a>
                         </div>
                         <span class="cover_title">{{ $comic['series'] }}</span>
                     </div>

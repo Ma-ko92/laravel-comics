@@ -43,7 +43,7 @@ Route::get('/comic_details/{id}', function ($id) {
             $comic_details = $comic;
         }
     }
-
+    
     // Condizione che visualizza errore 404 in caso di inserimento di un id non presente nell'array
     if(empty($comic_details)) {
         abort('404');

@@ -327,3 +327,129 @@ img {
   font-weight: 800;
   color: #595959;
 }
+
+.more_details_bg {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  margin-top: 60px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.more_details_bg .more_details_flex {
+  display: flex;
+  flex-direction: row;
+}
+.more_details_bg .more_details_flex .talent_box {
+  width: 50%;
+  margin-right: 40px;
+}
+.more_details_bg .more_details_flex .talent_box h2 {
+  color: #003f5e;
+  font-size: 18px;
+}
+.more_details_bg .more_details_flex .talent_box .artists_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px 0px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 20px;
+  color: #003f5e;
+}
+.more_details_bg .more_details_flex .talent_box .artists_box .artists_name {
+  width: 70%;
+}
+.more_details_bg .more_details_flex .talent_box .artists_box .name {
+  color: #00a9d9;
+}
+.more_details_bg .more_details_flex .talent_box .artists_box .name .punctuation {
+  color: #003f5e;
+}
+.more_details_bg .more_details_flex .talent_box .writers_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px 0px;
+  border-bottom: 1px solid lightgray;
+  color: #003f5e;
+}
+.more_details_bg .more_details_flex .talent_box .writers_box .writers_name {
+  width: 70%;
+}
+.more_details_bg .more_details_flex .talent_box .writers_box .name {
+  color: #00a9d9;
+}
+.more_details_bg .more_details_flex .talent_box .writers_box .name .punctuation {
+  color: #003f5e;
+}
+.more_details_bg .more_details_flex .specs_box {
+  width: 50%;
+}
+.more_details_bg .more_details_flex .specs_box h2 {
+  color: #003f5e;
+  font-size: 18px;
+}
+.more_details_bg .more_details_flex .specs_box .series_box {
+  font-size: 12px;
+  padding: 10px 0px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 20px;
+  color: #003f5e;
+  position: relative;
+}
+.more_details_bg .more_details_flex .specs_box .price_box,
+.more_details_bg .more_details_flex .specs_box .date_box {
+  font-size: 12px;
+  padding: 10px 0px;
+  border-bottom: 1px solid lightgray;
+  color: #003f5e;
+  position: relative;
+}
+.more_details_bg .more_details_flex .specs_box .price_box span:last-child,
+.more_details_bg .more_details_flex .specs_box .date_box span:last-child {
+  color: #003f5e;
+  position: absolute;
+  left: 150px;
+}
+.more_details_bg .more_details_flex .specs_box .highlight {
+  color: #00a9d9;
+  text-transform: uppercase;
+  position: absolute;
+  left: 150px;
+}
+
+.shop_bg_bottom {
+  background-color: #f6f6f6;
+}
+
+.shop_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.shop_icons .digital_img,
+.shop_icons .shop_img,
+.shop_icons .locator_img,
+.shop_icons .subscriptions_img {
+  background: url("../img/cta-icons.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-left: 1px solid lightgray;
+}
+.shop_icons .shop_img {
+  background-position-x: -111px;
+}
+.shop_icons .locator_img {
+  background-position-x: -74px;
+}
+.shop_icons .subscriptions_img {
+  background-position-x: -37px;
+}
